@@ -159,6 +159,19 @@
                       <li class="dmemo"><a class="dmemo" href="<?=base_url()?>memo/daftar-memo/">Daftar Memo</a></li>
                     </ul>
                   </li>
+                  <li class="sidebar-list certi">
+                    <a class="sidebar-link sidebar-title certi" href="#">
+                      <svg class="stroke-icon">
+                        <use href="<?=base_url()?>assets/assets/svg/icon-sprite.svg#stroke-task"></use>
+                      </svg>
+                      <svg class="fill-icon">
+                        <use href="<?=base_url()?>assets/assets/svg/icon-sprite.svg#fill-task"></use>
+                      </svg><span>Certificate</span></a>
+                    <ul class="sidebar-submenu">
+                      <li class="bcerti"><a class="bcerti" href="<?=base_url()?>certi/buat-baru/">Buat Baru</a></li>
+                      <li class="dcerti"><a class="dcerti" href="<?=base_url()?>certi/daftar-certi/">Daftar Certificate</a></li>
+                    </ul>
+                  </li>                  
                   <li class="sidebar-list webs">
                     <a class="sidebar-link sidebar-title webs" href="#">
                       <svg class="stroke-icon">
@@ -256,7 +269,19 @@
                     $(".sidebar-list.memo .sidebar-title").find('.according-menu i').removeClass('fa-angle-right').addClass('fa-angle-down');
                     $(".sidebar-list.memo ul.sidebar-submenu").slideDown('normal');   
                 }
-                
+            } else if (segment1 == "certi"){
+              $(".certi").addClass("active");
+              if (segment2 == "buat-baru") {
+                  $(".bcerti").addClass("active");
+                  $(".sidebar-list.certi").addClass('active');
+                  $(".sidebar-list.certi .sidebar-title").find('.according-menu i').removeClass('fa-angle-right').addClass('fa-angle-down');
+                  $(".sidebar-list.certi ul.sidebar-submenu").slideDown('normal');                    
+              } else if (segment2 == "daftar-certi"){
+                  $(".dcerti").addClass("active");
+                  $(".sidebar-list.certi").addClass('active');
+                  $(".sidebar-list.certi .sidebar-title").find('.according-menu i').removeClass('fa-angle-right').addClass('fa-angle-down');
+                  $(".sidebar-list.certi ul.sidebar-submenu").slideDown('normal');   
+              }
             } else if (segment1 == "websites") {
                 $(".webs").addClass("active");
                 if (segment2 == "gallery-website") {

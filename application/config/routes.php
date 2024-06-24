@@ -49,18 +49,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'dashboard';
+$route['default_controller'] = 'Dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['memo/buat-baru'] = 'dashboard/memo';
-$route['memo/daftar-memo'] = 'dashboard/daftarmemo';
-$route['websites/gallery-website'] = 'dashboard/gallery';
-$route['websites/ulasan'] = 'dashboard/ulasan';
-$route['memo/simpan-memo']='dashboard/smemo';
-$route['gallery/simpan-gallery']='dashboard/sgal';
-$route['gallery/hapus/(:any)'] = 'dashboard/hapusgal/$1';
-$route['ulasan/simpan-ulasan']='dashboard/sulasan';
-$route['ulasan/hapus/(:any)'] = 'dashboard/hapusula/$1';
-$route['memo/ubah-memo/(:any)'] = 'dashboard/ubah/$1';
-$route['memo/update-memo']='dashboard/update';
-$route['memo/hapus/(:any)'] = 'dashboard/hapus/$1';
+$route['memo/buat-baru'] = 'Dashboard/memo';
+$route['memo/daftar-memo'] = 'Dashboard/daftarmemo';
+$route['websites/gallery-website'] = 'Dashboard/gallery';
+$route['websites/ulasan'] = 'Dashboard/ulasan';
+$route['memo/simpan-memo']='Dashboard/smemo';
+$route['gallery/simpan-gallery']='Dashboard/sgal';
+$route['gallery/hapus/(:any)'] = 'Dashboard/hapusgal/$1';
+$route['ulasan/simpan-ulasan']='Dashboard/sulasan';
+$route['ulasan/hapus/(:any)'] = 'Dashboard/hapusula/$1';
+$route['memo/ubah-memo/(:any)'] = 'Dashboard/ubah/$1';
+$route['memo/update-memo']='Dashboard/update';
+$route['memo/hapus/(:any)'] = 'Dashboard/hapus/$1';
+$route['certi/buat-baru'] = 'Certi/buatcerti';
+$route['certi/daftar-certi'] = 'Certi';
+$route['certi/simpan-certi']='Certi/save';
+$route['certi/ubah-certi/(:any)'] = 'Certi/ubah/$1';
+$route['certi/update-certi']='Certi/update';
+$route['certi/hapus/(:any)'] = 'Certi/delete/$1';

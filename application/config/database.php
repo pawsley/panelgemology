@@ -75,10 +75,13 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'gemologylab_322',
-	'password' => '@indonesia234',
-	'database' => 'gemologylab_322',
+	'hostname' => '101.50.2.44',
+	// 'username' => 'gemologylab_322',
+	// 'password' => '@indonesia234',
+	// 'database' => 'gemologylab_322',
+	'username' => 'akira_gemolog',
+	'password' => '@akiragemolog',
+	'database' => 'akira_gemolog',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
