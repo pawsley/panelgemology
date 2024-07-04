@@ -70,3 +70,4 @@ $route['certi/simpan-certi']='Certi/save';
 $route['certi/ubah-certi/(:any)'] = 'Certi/ubah/$1';
 $route['certi/update-certi']='Certi/update';
 $route['certi/hapus/(:any)'] = 'Certi/delete/$1';
+$route['full']='Dashboard/block';

@@ -33,6 +33,10 @@ class Dashboard extends CI_Controller
     }
   }
 
+  public function block() {
+    $this->load->view('websites/blokakses');
+  }
+
   public function fetchMemoData()
   {
       // Create an array with abbreviated month names
